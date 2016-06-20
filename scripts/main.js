@@ -11,7 +11,7 @@ $(document).ready(function() {
 
   function displayWeather(zip) {
 
-    $.getJSON("http://api.openweathermap.org/data/2.5/weather?zip=" + zip + ",us&appid=727a5604f354627fdfe427a918d37005&units=imperial", function(data) {
+    $.getJSON("https://api.openweathermap.org/data/2.5/weather?zip=" + zip + ",us&appid=727a5604f354627fdfe427a918d37005&units=imperial", function(data) {
       console.log(data);
       var currentTemp = Math.round(data.main.temp);
       var name = data.name;
@@ -24,7 +24,7 @@ $(document).ready(function() {
       $('#high-temp').html(highTemp);
       $('#low-temp').html(lowTemp);
       $('#conditions').html(conditions.capitalize());
-      $('#weather-icon').attr('src', "http://openweathermap.org/img/w/" + conditionImg + ".png");  
+      $('#weather-icon').attr('src', "https://openweathermap.org/img/w/" + conditionImg + ".png");  
 
     });
   }
