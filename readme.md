@@ -1,0 +1,1 @@
+Simple jQuery app to view local weather.
