@@ -9,7 +9,13 @@ html {
 }
 
 body{
-    background-color: #112236;
+  background-color: #112236;
+  color: #EEE;
+}
+
+button{
+  outline: 0;
+  cursor: pointer;
 }
 
 .container{
@@ -19,7 +25,7 @@ body{
 }
 
 .weather-container{
-  background-color: #dbe4ed;
+  background-color: #112236;
 }
 
 
@@ -89,6 +95,10 @@ body{
    text-align: center;
 }
 
+#conditions {
+  text-transform: capitalize;
+}
+
 @media only screen 
 and (min-device-width : 769px)  {
 .bar{
@@ -125,21 +135,22 @@ and (min-device-width : 769px)  {
 
 .weather-inner h1{
   font-size: 50px;
+  margin: 40px;
 }
 
 .weather-inner h2{
   font-size: 40px;
+  margin: 20px;
 }
 
 .weather-inner h3{
   font-size: 30px;
+  margin: 20px;
 }
 
-}
 
 .weather-container{
- background-color: #dbe4ed;
- color: #444;
+ background-color: #112236;
  display:flex;
  flex-flow:column wrap;
  justify-content: flex-start;

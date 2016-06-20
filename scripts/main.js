@@ -1,11 +1,7 @@
 
 $(document).ready(function() {
   
-  
-  //Method to capitalize first letter of string
-  String.prototype.capitalize = function() {
-    return this.charAt(0).toUpperCase() + this.slice(1);
-  } 
+
 
  var zip = "19107";
 
@@ -23,7 +19,7 @@ $(document).ready(function() {
       $('#temp').html(currentTemp);
       $('#high-temp').html(highTemp);
       $('#low-temp').html(lowTemp);
-      $('#conditions').html(conditions.capitalize());
+      $('#conditions').html(conditions);
       $('#weather-icon').attr('src', "http://openweathermap.org/img/w/" + conditionImg + ".png");  
 
     });
